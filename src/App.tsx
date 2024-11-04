@@ -4,10 +4,12 @@ import PostDetail from './components/PostDetail';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<PostList />} />
-      <Route path="/posts/:postId" element={<PostDetail />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<PostList />} />
+        <Route path="/posts/:postId" element={<PostDetail />} />
+      </Routes>
+    </div>
   );
 };
 
