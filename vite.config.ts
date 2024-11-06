@@ -12,7 +12,6 @@ export default defineConfig({
       '/api': {
         target: 'https://koreandummyjson.site',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
