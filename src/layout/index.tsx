@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
+import { container } from '@/layout/index.css';
 
 function Layout() {
   return (
     <div>
       <header>
       </header>
-      <main>
+      <main className={container}>
         <Outlet />
       </main>
     </div>
