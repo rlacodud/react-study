@@ -1,6 +1,6 @@
 import { IndexRouteObject, Navigate, NonIndexRouteObject } from 'react-router-dom';
 import DefaultLayout from '@/layout';
-import PostListPage from '@/pages/post';
+import PostListPage from '@/pages/post/postList';
 import NotFound from '@/pages/error/404';
 import PostDetailPage from '@/pages/post/detail';
 
