@@ -31,6 +31,11 @@ export const getPostComments = async (id: string): Promise<Comments[]> => {
   return data.comments;
 };
 
+export const getFilteredPosts = async (userId: number | null): Promise<Post[]> => {
+  const { data } = await axios.get(`/api/posts?userId=${userId}`);
+  return data.posts;
+};
+
 export type {
   Post,
   Comments
